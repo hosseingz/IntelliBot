@@ -1,3 +1,4 @@
+import telebot
 import dotenv
 import g4f
 import os
