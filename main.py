@@ -19,6 +19,19 @@ def ask_gpt(prompt):
     except Exception as e:
         return "There is a problem with the server, please try again later."
 
+
+@bot.message_handler(commands=['start'])
+def handle_start(message):
+    greeting_message = (
+        "Hello! 👋\n"
+        "Welcome to the Bot project. This bot allows you to chat with an AI and receive responses based on your messages.\n"
+        "You can ask me anything!\n"
+        "For more details and the source code, please check my GitHub project: [GitHub Link](https://github.com/hosseingz/IntelliBot.git)"
+    )
+    
+    bot.reply_to(message, greeting_message)
+
+
 @bot.message_handler(func=lambda message:True)
 def handle_message(message):
     user_message = message.text
@@ -33,4 +46,3 @@ def handle_message(message):
     
 if __name__ == '__main__':
     bot.polling()
-    
