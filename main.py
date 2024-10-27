@@ -6,7 +6,7 @@ import os
 dotenv.load_dotenv()
 
 api_key = os.environ.get('api_key')
-bot = telebot.Telebot(api_key)
+bot = telebot.TeleBot(api_key)
 
 def ask_gpt(prompt):
     try:
