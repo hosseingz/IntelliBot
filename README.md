@@ -49,6 +49,35 @@ Follow these steps to set up the project locally:
    python main.py
    ```
 
+
+### Running on Google Colab 🚀
+
+You can also run this project on Google Colab by following these steps:
+
+1. **Clone the repository**:
+   ```python
+   !git clone https://github.com/hosseingz/IntelliBot.git
+   ```
+
+2. **Install dependencies**:
+   ```python
+   !pip install -r /content/IntelliBot/requirements.txt
+   ```
+
+3. **Set up environment variables**:
+   ```python
+   import os
+   os.environ['api_key'] = 'your_openai_api_key_here'  # Replace with your actual API key
+   ```
+
+4. **Run the bot**:
+   ```python
+   !python /content/IntelliBot/main.py
+   ```
+
+Now, your bot should be up and running on Colab! You can start chatting with it on Telegram using the bot's username.
+
+
 ## Usage 📝
 
 1. **Start a chat with your bot** on Telegram by searching for its username.
