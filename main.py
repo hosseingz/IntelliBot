@@ -26,7 +26,7 @@ def handle_start(message):
         "Hello! 👋\n"
         "Welcome to the Bot project. This bot allows you to chat with an AI and receive responses based on your messages.\n"
         "You can ask me anything!\n"
-        "For more details and the source code, please check my GitHub project: [GitHub Link](https://github.com/hosseingz/IntelliBot.git)"
+        "For more details and the source code, please check my GitHub project: https://github.com/hosseingz/IntelliBot.git"
     )
     
     bot.reply_to(message, greeting_message)
